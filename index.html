@@ -22,11 +22,18 @@
             width: 90%;
             padding: 40px 0;
         }
+        <div class="filter-nav" style="margin-bottom: 30px; text-align: center;">
+    <button class="filter-btn active" onclick="filterSelection('all')">All Records</button>
+    <button class="filter-btn" onclick="filterSelection('staff')">Staff</button>
+    <button class="filter-btn" onclick="filterSelection('livestock')">Livestock</button>
+    <button class="filter-btn" onclick="filterSelection('anomalies')">Anomalies</button>
+</div>
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
             margin-top: 20px;
+</div>
         }
         /* Character Card Specifics */
         .char-image {
