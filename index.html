@@ -6,108 +6,72 @@
     <title>Fómhar Ranch | Lore Archive</title>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="notion.css">
-    
-    <style>
-        /* Additional Layout Styles to support your CSS */
-        body {
-            background-color: var(--fomhar-black);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .content-wrapper {
-            max-width: 900px;
-            width: 90%;
-            padding: 40px 0;
-        }
-        <div class="filter-nav" style="margin-bottom: 30px; text-align: center;">
-    <button class="filter-btn active" onclick="filterSelection('all')">All Records</button>
-    <button class="filter-btn" onclick="filterSelection('staff')">Staff</button>
-    <button class="filter-btn" onclick="filterSelection('livestock')">Livestock</button>
-    <button class="filter-btn" onclick="filterSelection('anomalies')">Anomalies</button>
-</div>
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-</div>
-        }
-        /* Character Card Specifics */
-        .char-image {
-            width: 100%;
-            height: 200px;
-            background-color: #2a2a2a;
-            object-fit: cover;
-            border-bottom: 1px solid var(--fomhar-border);
-        }
-        .char-info {
-            padding: 15px;
-        }
-        .char-name {
-            font-family: var(--fomhar-font-serif);
-            color: var(--fomhar-red);
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            margin: 0;
-        }
-        .char-role {
-            font-family: var(--fomhar-font-sans);
-            font-size: 0.8rem;
-            color: var(--fomhar-beige);
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-            display: block;
-        }
-    </style>
 </head>
 <body>
+    <div class="content-wrapper">
+        <header>
+            <h1 class="notion-header__title">Fómhar Ranch Archive</h1>
+            <p class="notion-text"><em>"Harvesting the land. Preserving the bloodline."</em></p>
+        </header>
 
-<div class="content-wrapper">
-    <header>
-        <h1 class="notion-header__title">Fómhar Ranch</h1>
-        <p class="notion-text">The wood is charred, the bone is weathered, and the blood runs deep.</p>
-    </header>
-
-    <div class="notion-callout">
-        <div class="notion-text">
-            <strong>SYSTEM NOTICE:</strong> Accessing restricted ranch archives. Ensure your clearance level is updated before proceeding into the Oxblood sector.
+        <div class="notion-callout">
+            <div class="notion-text">
+                <strong>SYSTEM NOTICE:</strong> Accessing restricted ranch archives. Ensure your clearance level is updated before proceeding into the Oxblood sector.
+            </div>
         </div>
-    </div>
 
-    <hr>
+        <hr>
 
-    <h2 class="notion-header__title">Personnel & Livestock</h2>
-    
-    <div class="gallery-grid notion-gallery-grid">
+        <h2 class="notion-header__title">Personnel & Pack</h2>
         
-        <div class="notion-collection-card">
-            <div class="char-image" style="background-image: url('images/1000037227.png'); background-size: cover;"></div>
-            <div class="char-info">
-                <span class="char-role">Alpha Partiarch</span>
-                <h3 class="char-name">Butch Fohmar</h3>
-                <p class="notion-text">Unquestioned rule. Overseer of the Harvest rituals. Absolute authority over the lineage.</p>
+        <div class="gallery-grid notion-gallery-grid">
+            
+            <div class="notion-collection-card">
+                <div class="char-image" style="background-color: #2a1010;"></div>
+                <div class="char-info">
+                    <span class="char-role">Alpha Patriarch</span>
+                    <h3 class="char-name">Butch Fómhar</h3>
+                    <p class="notion-text">The unquestioned leader. He views the pack as a divine entity that must be protected from outside corruption.</p>
+                </div>
+            </div>
+
+            <div class="notion-collection-card">
+                <div class="char-image" style="background-color: #1a1a1a;"></div>
+                <div class="char-info">
+                    <span class="char-role">The Matriarch</span>
+                    <h3 class="char-name">Martha Fómhar</h3>
+                    <p class="notion-text">Governs with an iron hand. Her goal is to prove her methods are superior to the "softness" of the first wife.</p>
+                </div>
+            </div>
+
+            <div class="notion-collection-card">
+                <div class="char-image" style="background-color: #3d0000;"></div>
+                <div class="char-info">
+                    <span class="char-role">The Heir</span>
+                    <h3 class="char-name">Hunter Fómhar</h3>
+                    <p class="notion-text">The eldest son and Butch's favorite. Represents the pure, untamed savagery of the bloodline.</p>
+                </div>
+            </div>
+
+            <div class="notion-collection-card">
+                <div class="char-image" style="background-color: #2b2b2b;"></div>
+                <div class="char-info">
+                    <span class="char-role">The Rebellious Lure</span>
+                    <h3 class="char-name">Lucy Fómhar</h3>
+                    <p class="notion-text">A beautiful manipulator who uses her charm to mask a deep-seated defiance against the pack’s rules.</p>
+                </div>
             </div>
         </div>
 
-        <div class="notion-collection-card">
-            <div class="char-image" style="background-image: url('https://via.placeholder.com/300x200'); background-size: cover;"></div>
-            <div class="char-info">
-                <span class="char-role">The Unbroken</span>
-                <h3 class="char-name">Red Mare</h3>
-                <p class="notion-text">A beast that refuses the saddle. Some say she was born from the Oxblood soil itself.</p>
-            </div>
+        <h2 class="notion-header__title">The Territory</h2>
+        <div class="notion-text">
+            <p>The Fómhar Ranch sits forty miles outside of Rydeshill, isolated by dense, ancient woods to the west and rolling fields to the east.</p>
+            <ul>
+                <li><strong>The Farmhouse:</strong> An austere two-story structure with a hidden, tile-lined basement used for the "harvest."</li>
+                <li><strong>The Barn:</strong> A massive rust-red structure that houses livestock on the surface and industrial cold storage for human remains in secret.</li>
+                <li><strong>The Perimeter:</strong> Guarded by powerfully built dogs and subtle tripwire alarms.</li>
+            </ul>
         </div>
-
-        </div>
-
     </div>
-
-    <hr>
-
-</div>
-
 </body>
 </html>
