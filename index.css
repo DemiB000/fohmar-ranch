@@ -1,0 +1,235 @@
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Fómhar Ranch Archive</h1>
+            <p class="tagline">"Harvesting the land. Preserving the bloodline."</p>
+        </header>
+
+        <div class="notice">
+            <strong>SYSTEM NOTICE:</strong> Accessing restricted ranch archives. Ensure your clearance level is updated before proceeding into the Oxblood sector.
+        </div>
+
+        <div class="divider"></div>
+
+        <h2>Personnel & Pack</h2>
+        
+        <div class="gallery">
+             <div class="card" onclick="openCharacter('maire')">
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/400x300/1a1a1a/666666?text=Maire+Image" alt="Máire Fómhar">
+                </div>
+                <div class="card-info">
+                    <span class="role">The Crippled Legacy</span>
+                    <h3>Máire Fómhar</h3>
+                    <p>A reminder of the pack's fragility. Kept hidden to prevent external medical intervention.</p>
+                </div>
+            </div>
+            
+            <div class="card" onclick="openCharacter('butch')">
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/400x300/2a1010/666666?text=Butch+Image" alt="Butch Fómhar">
+                </div>
+                <div class="card-info">
+                    <span class="role">Alpha Patriarch</span>
+                    <h3>Butch Fómhar</h3>
+                    <p>The unquestioned leader. He views the pack as a divine entity that must be protected from outside corruption.</p>
+                </div>
+            </div>
+
+            <div class="card lyra-card" onclick="openCharacter('lyra')">
+                <div class="erased-overlay">
+                    <div class="erased-text">ERASED</div>
+                </div>
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/400x300/1a1a1a/666666?text=Lyra+Image" alt="Lyra Fómhar">
+                </div>
+                <div class="card-info">
+                    <span class="role">The Legacy</span>
+                    <h3>Lyra Fómhar</h3>
+                    <p></p>
+                </div>
+            </div>
+            
+            <div class="card" onclick="openCharacter('martha')">
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/400x300/3d0000/666666?text=Martha+Image" alt="Martha Fómhar">
+                </div>
+                <div class="card-info">
+                    <span class="role">The Iron Matriarch</span>
+                    <h3>Martha Fómhar</h3>
+                    <p>Governs with an iron hand. Her goal is to prove her methods are superior to the "softness" of the first wife.</p>
+                </div>
+            </div>
+            
+            <div class="card" onclick="openCharacter('hunter')">
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/400x300/1a1a1a/666666?text=Hunter+Image" alt="Hunter Fómhar">
+                </div>
+                <div class="card-info">
+                    <span class="role">The Enforcer</span>
+                    <h3>Hunter Fómhar</h3>
+                    <p>The eldest son and Butch's favorite. The heir. Represents the pure, untamed savagery of the bloodline. Responsible for the high-threat "livestock."</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="openCharacter('archer')">
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/400x300/3d0000/666666?text=Archer+Image" alt="Archer Fómhar">
+                </div>
+                <div class="card-info">
+                    <span class="role">The Penitent Hound</span>
+                    <h3>Archer Fómhar</h3>
+                    <p>The second son. The guardian of the sickroom.</p>
+                </div>
+            </div>
+            
+            <div class="card" onclick="openCharacter('klaus')">
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/400x300/2b2b2b/666666?text=Klaus+Image" alt="Nikolas Klaus Fómhar">
+                </div>
+                <div class="card-info">
+                    <span class="role">The Muscle</span>
+                    <h3>Nikolas "Klaus" Fómhar</h3>
+                    <p>The muscle.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="openCharacter('fallow')">
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/400x300/3d0000/666666?text=Fallow+Image" alt="Fallow Fómhar">
+                </div>
+                <div class="card-info">
+                    <span class="role">The Logistical Anchor</span>
+                    <h3>Fallow Fómhar</h3>
+                    <p>Manages the butcher contracts and "disappearance" records. Maintains the family's legacy.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="openCharacter('caleb')">
+                <div class="card-image">
+                    <img src="https://via
+
+                    <h2>The Territory</h2>
+        <div class="territory-content">
+            <img src="https://via.placeholder.com/1200x400/1a1a1a/666?text=Ranch+House" alt="Ranch" class="territory-image">
+            <p>The Fómhar Ranch sits forty miles outside of Rydeshill.</p>
+        </div>
+
+        <footer>
+            <p>Fómhar Ranch Archive © 2025</p>
+        </footer>
+    </div>
+    
+    <!-- Character Pages -->
+    <div id="character-maire" class="character-page">
+        <button class="back-button" onclick="closeCharacter()">← Back</button>
+        <div class="character-header" style="background-image: url('https://via.placeholder.com/1920x400/1a1a1a/666?text=Maire+Header');">
+            <div class="character-header-content">
+                <span class="role">The Crippled Legacy</span>
+                <h2>Máire Fómhar</h2>
+            </div>
+        </div>
+        <div class="character-content">
+            <div class="character-grid">
+                <div class="detail-section">
+                    <h3>Profile</h3>
+                    <div class="detail-row">
+                        <div class="detail-label">Age:</div>
+                        <div class="detail-value">48</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Role:</div>
+                        <div class="detail-value">First Wife</div>
+                    </div>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Traits</h3>
+                    <div class="detail-row">
+                        <div class="detail-label">Nature:</div>
+                        <div class="detail-value">Fragile</div>
+                    </div>
+                </div>
+                
+                <div class="detail-section bio-section">
+                    <h3>Background</h3>
+                    <p>A reminder of the pack's fragility. Kept hidden to prevent external medical intervention.</p>
+                </div>
+                
+                <div class="detail-section mood-board">
+                    <h3>Visual References</h3>
+                    <div class="mood-grid">
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/1a1a1a/666?text=1');"></div>
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/2a2a2a/666?text=2');"></div>
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/1a1a1a/666?text=3');"></div>
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/2a2a2a/666?text=4');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="character-butch" class="character-page">
+        <button class="back-button" onclick="closeCharacter()">← Back</button>
+        <div class="character-header" style="background-image: url('https://via.placeholder.com/1920x400/2a1010/666?text=Butch+Header');">
+            <div class="character-header-content">
+                <span class="role">Alpha Patriarch</span>
+                <h2>Butch Fómhar</h2>
+            </div>
+        </div>
+        <div class="character-content">
+            <div class="character-grid">
+                <div class="detail-section">
+                    <h3>Profile</h3>
+                    <div class="detail-row">
+                        <div class="detail-label">Age:</div>
+                        <div class="detail-value">52</div>
+                    </div>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Traits</h3>
+                    <div class="detail-row">
+                        <div class="detail-label">Nature:</div>
+                        <div class="detail-value">Authoritarian</div>
+                    </div>
+                </div>
+                
+                <div class="detail-section bio-section">
+                    <h3>Background</h3>
+                    <p>The unquestioned leader. Views the pack as divine.</p>
+                </div>
+                
+                <div class="detail-section mood-board">
+                    <h3>Visual References</h3>
+                    <div class="mood-grid">
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/2a1010/666?text=1');"></div>
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/3d0000/666?text=2');"></div>
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/2a1010/666?text=3');"></div>
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/3d0000/666?text=4');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openCharacter(id) {
+            document.getElementById('character-' + id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeCharacter() {
+            document.querySelectorAll('.character-page').forEach(p => p.classList.remove('active'));
+            document.body.style.overflow = 'auto';
+        }
+        
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeCharacter();
+        });
+    </script>
+</body>
+</html>
