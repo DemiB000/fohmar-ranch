@@ -1,0 +1,111 @@
+ <html>
+    <body>
+ <!-- Character Pages -->
+    <div id="character-maire" class="character-page">
+        <button class="back-button" onclick="closeCharacter()">← Back</button>
+        <div class="character-header" style="background-image: url('https://via.placeholder.com/1920x400/1a1a1a/666?text=Maire+Header');">
+            <div class="character-header-content">
+                <span class="role">The Crippled Legacy</span>
+                <h2>Máire Fómhar</h2>
+            </div>
+        </div>
+        <div class="character-content">
+            <div class="character-grid">
+                <div class="detail-section">
+                    <h3>Profile</h3>
+                    <div class="detail-row">
+                        <div class="detail-label">Age:</div>
+                        <div class="detail-value">48</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Role:</div>
+                        <div class="detail-value">First Wife</div>
+                    </div>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Traits</h3>
+                    <div class="detail-row">
+                        <div class="detail-label">Nature:</div>
+                        <div class="detail-value">Fragile</div>
+                    </div>
+                </div>
+                
+                <div class="detail-section bio-section">
+                    <h3>Background</h3>
+                    <p>A reminder of the pack's fragility. Kept hidden to prevent external medical intervention.</p>
+                </div>
+                
+                <div class="detail-section mood-board">
+                    <h3>Visual References</h3>
+                    <div class="mood-grid">
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/1a1a1a/666?text=1');"></div>
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/2a2a2a/666?text=2');"></div>
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/1a1a1a/666?text=3');"></div>
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/2a2a2a/666?text=4');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="character-butch" class="character-page">
+        <button class="back-button" onclick="closeCharacter()">← Back</button>
+        <div class="character-header" style="background-image: url('https://via.placeholder.com/1920x400/2a1010/666?text=Butch+Header');">
+            <div class="character-header-content">
+                <span class="role">Alpha Patriarch</span>
+                <h2>Butch Fómhar</h2>
+            </div>
+        </div>
+        <div class="character-content">
+            <div class="character-grid">
+                <div class="detail-section">
+                    <h3>Profile</h3>
+                    <div class="detail-row">
+                        <div class="detail-label">Age:</div>
+                        <div class="detail-value">52</div>
+                    </div>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Traits</h3>
+                    <div class="detail-row">
+                        <div class="detail-label">Nature:</div>
+                        <div class="detail-value">Authoritarian</div>
+                    </div>
+                </div>
+                
+                <div class="detail-section bio-section">
+                    <h3>Background</h3>
+                    <p>The unquestioned leader. Views the pack as divine.</p>
+                </div>
+                
+                <div class="detail-section mood-board">
+                    <h3>Visual References</h3>
+                    <div class="mood-grid">
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/2a1010/666?text=1');"></div>
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/3d0000/666?text=2');"></div>
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/2a1010/666?text=3');"></div>
+                        <div class="mood-item" style="background-image: url('https://via.placeholder.com/300/3d0000/666?text=4');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openCharacter(id) {
+            document.getElementById('character-' + id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeCharacter() {
+            document.querySelectorAll('.character-page').forEach(p => p.classList.remove('active'));
+            document.body.style.overflow = 'auto';
+        }
+        
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeCharacter();
+        });
+    </script>
+</body>
+</html>
